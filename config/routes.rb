@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-  resources :users, only: [:new, :create]
+  resources :users, only: [ :new, :create, :edit, :update ]
   # Can be used by load balancers and uptime monitors to verify that the app is live.
   get "up" => "rails/health#show", as: :rails_health_check
 
